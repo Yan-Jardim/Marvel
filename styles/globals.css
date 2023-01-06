@@ -1,0 +1,19 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background-image: url("../public/MarvelHome.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+:root {
+  --color-blue: #00009f;
+  --color-red: #f70b17;
+  --color-gray: #a8ab84;
+  --color-light-gray: #d7dacf;
+  --color-black: #000;
+  --color-titles: #4337fe;
+  --color-white: #fff;
+}

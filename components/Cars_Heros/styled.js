@@ -9,19 +9,26 @@ margin-top: 20px;
 export const CardsPosition = styled.div`
 display: flex;
 flex-wrap: wrap;
-max-width: 1350px;
+justify-content: center;
+max-width: 1250px;
 `
 export const Cards = styled.div`
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: column;
-border: 1px solid #ccc;
-border-radius: 10%;
 margin-top: 10px;
-width: 200px;
-height: 200px;
+width: 300px;
+height: 300px;
 `
 export const Name = styled.div`
-background-color: white;
-height: 50px;
+color: var(--color-titles);
+font-weight: bold;
+margin-bottom: 5px;
 text-align: center;
+`
+
+export const Img = styled.img`
+width: 250px;
+height: 250px;
 `

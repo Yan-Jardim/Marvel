@@ -4,7 +4,8 @@ import Header_Heros from "../../components/Header_Heros";
 import Cards_Heros from "../../components/Cars_Heros";
 
 
-const index = () => {
+const Heros = () => {
+
     return (
         <S.Heros>
             <Header_Heros />
@@ -13,4 +14,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Heros

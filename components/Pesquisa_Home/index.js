@@ -5,15 +5,25 @@ import router from 'next/router';
 
 const index = () => {
 
-    const [hero, setHero] = useState([]);
+    const [herois, setHerois] = useState();
+
+    const onSubmitSearch = (event) => {
+        event.preventDefault()
+
+        router.push(`/Heros?name=${herois}`);
+    }
 
     return (
         <div>
             <S.Campo_Pequisa>
                 <S.Name>MYSUPERHERO</S.Name>
-                
-                <S.Input onChange={(e) => setHero(e.target.value)} />
-                <S.Btn>Pequisar</S.Btn>
+
+                <S.Input onChange={(e) => setHerois(e.target.value)}
+                    value={herois}
+                />
+
+                <S.Btn onClick={onSubmitSearch}>Pequisar</S.Btn>
+
             </S.Campo_Pequisa>
         </div>
     )

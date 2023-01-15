@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
-export const Campo_Pequisa = styled.div` 
-position: absolute;
-left: 40%;
-top: 20px;
-`
+export const Campo_Pequisa = styled.div``
+
 export const Name = styled.p`
 font-weight: bold;
 font-size: 40px;
@@ -19,6 +16,7 @@ border-radius: 5px;
 border: 1px solid ;
 `
 export const Btn = styled.button` 
+width: 70px;
 height: 35px;
 border-radius: 5px;
 border: none ;

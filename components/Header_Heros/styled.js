@@ -11,4 +11,7 @@ font-size: 50px;
 font-style: oblique;
 font-weight: bold;
 color: var(--color-blue);
+@media (max-width: 360px){
+font-size: 40px;
+}
 `

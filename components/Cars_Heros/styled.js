@@ -25,6 +25,9 @@ color: var(--color-titles);
 font-weight: bold;
 margin-bottom: 5px;
 text-align: center;
+@media (max-width: 360px){
+font-size: 20px;
+}
 `
 export const Img = styled.img`
 width: 250px;

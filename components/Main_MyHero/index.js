@@ -25,7 +25,6 @@ const index = () => {
 
             .then((response) => {
                 setResposta(response?.data?.data?.results);
-                console.log(response, "misericordia");
             });
     }, [idHeroes]);
 

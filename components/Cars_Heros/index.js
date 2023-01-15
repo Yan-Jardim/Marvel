@@ -21,7 +21,6 @@ const index = () => {
       )
       .then((resposta) => {
         setResposta(resposta.data.data.results);
-        console.log(resposta, "Meu Deus");
       });
   }, []);
 

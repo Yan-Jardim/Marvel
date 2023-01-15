@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const Home = styled.div`
 display: flex;
 justify-content: center;
@@ -27,7 +26,6 @@ font-weight: bold;
 margin-bottom: 5px;
 text-align: center;
 `
-
 export const Img = styled.img`
 width: 250px;
 height: 250px;

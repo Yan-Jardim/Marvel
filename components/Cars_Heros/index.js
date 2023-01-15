@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { router } from "next/router";
 
 const index = () => {
-  
   const [resposta, setResposta] = useState();
 
   let url
@@ -39,5 +38,4 @@ const index = () => {
     </S.Home>
   )
 }
-
 export default index

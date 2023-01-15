@@ -5,10 +5,10 @@ import Main_MyHero from "../../components/Main_MyHero";
 
 const index = () => {
   return (
-    <>
+    <S.My>
       <Header_Heros />
       <Main_MyHero />
-    </>
+    </S.My>
   )
 }
 

@@ -2,6 +2,7 @@ import * as S from "./styled";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { router } from "next/router";
+import Erro_Pesquisa from "../Erro_Pesquisa"
 
 const index = () => {
   const [resposta, setResposta] = useState();
@@ -26,14 +27,19 @@ const index = () => {
 
   return (
     <S.Home>
-      <S.CardsPosition>
-        {resposta && resposta.map((item) => (
-          <S.Cards onClick={() => { router.push(`/MyHero?id=${item.id}`) }}>
-            <S.Name>{item.name}</S.Name>
-            <S.Img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
-          </S.Cards>
-        ))}
-      </S.CardsPosition>
+      {resposta?.length > 0 ? (
+        <S.CardsPosition>
+          {resposta && resposta.map((item) => (
+            <S.Cards onClick={() => { router.push(`/MyHero?id=${item.id}`) }}>
+              <S.Name>{item.name}</S.Name>
+              <S.Img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} />
+            </S.Cards>
+          ))}
+        </S.CardsPosition>
+      ) : (
+        <Erro_Pesquisa />
+      )}
+
     </S.Home>
   )
 }

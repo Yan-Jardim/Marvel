@@ -5,7 +5,7 @@ import router from 'next/router';
 const index = () => {
   return (
     <S.header>
-      <S.Title onClick={() => { router.push("http://localhost:3000/") }}>MYSUPERHERO</S.Title>
+      <S.Title onClick={() => { router.push("/") }}>MYSUPERHERO</S.Title>
     </S.header>
   )
 }

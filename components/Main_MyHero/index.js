@@ -22,12 +22,10 @@ const index = () => {
                     headers: {},
                 }
             )
-
             .then((response) => {
                 setResposta(response?.data?.data?.results);
             });
     }, [idHeroes]);
-
     return (
         <>
             {resposta && resposta.map((herois) => {
@@ -37,9 +35,7 @@ const index = () => {
                             <S.Img src={`${herois.thumbnail.path}.${herois.thumbnail.extension}`} />
                             <S.Description>
                                 <S.Title>{herois.name}</S.Title>
-
                                 <S.Parag>{herois.description ? herois.description : 'There is no description'}</S.Parag>
-
                             </S.Description>
                         </S.Header>
                         <S.Main>
@@ -54,7 +50,6 @@ const index = () => {
                                         })}
                                     </S.Comics>
                                 )}
-
                                 {herois?.events?.returned !== 0 && (
                                     <S.Eventos>
 
